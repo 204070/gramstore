@@ -1,11 +1,13 @@
-Setup Github repo.
-
-
-Setup Basic Helloworld app on Google cloud
-
-
 Specify URL paths and DB models
-
+    '/'
+    '/profile':
+        name, onedrive account, saved-pictures-list
+    '/submit-image':
+        form for submitting image
+    '/image/<int:image_id>':
+        delete from onedrive checkbox
+        delete button - '/delete/<pk>'
+    '/image/<int:image_id>/delete
 
 Setup Cloud Engine DB for App
 
