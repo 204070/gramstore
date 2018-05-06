@@ -1,10 +1,24 @@
-from flask import Flask,render_template, request
+from flask import (
+    Flask, render_template, request, flash, session, redirect                
+)
 app = Flask(__name__)
+app.config.from_object(config)
 
 # Add cloud datastore settings
+# Setup the data model.
+# with app.app_context():
+    # from . import model_datastore
+    # model = model_datastore
+    # model.init_app(app)
 
+# Manage sessions
+from flask import session as login_session
+import random, string
+
+
+# Views
 @app.route('/')
-def HelloWorld():
+def index():
     return render_template("index.html")
 
 # login required

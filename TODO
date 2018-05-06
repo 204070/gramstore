@@ -3,8 +3,13 @@ Specify URL routes and DB models
         '/'
         '/profile':
             name, onedrive account, saved-pictures-list
+            message 'image submitted button{View}'
         '/submit-image':
-            form for submitting image
+            form for submitting image:
+                image
+                description(optional)
+            button{Cancel}: Goes back to profile
+            button{Save}: redirect to profile with message 'submitting image'
         '/image/<int:image_id>':
             delete from onedrive checkbox
             delete button - '/delete/<pk>'
