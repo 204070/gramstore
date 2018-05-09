@@ -40,3 +40,4 @@ Setup shortened URL storage and retrieval
 Submit
 
 
+{'mail': None, 'officeLocation': None, 'jobTitle': None, 'mobilePhone': None, 'userPrincipalName': 'talk2seun2010@hotmail.com', 'givenName': 'Oluwaseun', '@odata.context': 'https://graph.microsoft.com/v1.0/$metadata#users/$entity', 'businessPhones': [], 'preferredLanguage': None, 'id': '3628ef3665e9a442', 'surname': 'Akinwunmi', 'displayName': 'Oluwaseun Akinwunmi'}

@@ -1,3 +1,4 @@
+import config
 from flask import current_app
 from google.cloud import datastore
 
@@ -7,7 +8,7 @@ def init_app(app):
     pass
 
 def get_client():
-    return datastore.Client(current_app.config['PROJECT_ID'])
+    return datastore.Client(config.PROJECT_ID)
 
 # [START from_datastore]
 def from_datastore(entity):

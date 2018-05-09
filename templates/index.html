@@ -9,6 +9,22 @@
 </head>
 <body>
     <h1>Welcome to Gramshare!!!</h1>
-    <a href="#">Login with OneDrive</a>
+    <div class = 'flash'>
+            {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        
+    <ul>
+    {% for message in messages %}
+        <li> <strong> {{ message }} </strong> </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+    </div>
+    <div class="login-box">
+        <p><button type="button" class="btn btn-success btn-md" onclick="window.location.href='/login'">Microsoft Login</button></p>
+		<!--<img src="/static/images/microsoft_graph.png" alt="Microsoft Graph" width=400 height=195/>-->
+    </div>
 </body>
 </html>
